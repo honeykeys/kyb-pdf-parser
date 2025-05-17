@@ -1,26 +1,58 @@
-@import "tailwindcss";
-
+/* src/app/globals.css */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --pooh-yellow: #FAD749;      
+    --pooh-red: #EF4701;          
+    --pooh-button-hover: #D03D00; 
+    --pooh-error-bg: #F52532;     
+    --pooh-error-text: #FFFFFF;   
+    --pooh-text-dark: #212121;    
+    --pooh-text-on-dark: #FFFFFF; 
+    --pooh-text-header: #AF4A0B;  
+    --pooh-input-bg: #FFFBEB;     
+    --pooh-input-border: #FBC02D; 
+    --pooh-table-header-bg: #FBC02D; 
+    --pooh-table-row-alt: #FFFDE7; 
+    --pooh-success-bg: #2ecc71;   
+    --pooh-success-text: #FFFFFF; 
+    --pooh-disabled-bg: #bdc3c7;  
+    --pooh-disabled-text: #7f8c8d;
+    --color-background-page: var(--pooh-yellow); 
+    --color-text-default: var(--pooh-text-dark);
+    --color-card-background: var(--pooh-input-bg);
+    --color-card-border: var(--pooh-input-border);
+    --color-text-secondary: #555;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Fallback font stack */
+    line-height: 1.5;
+    background-color: var(--color-background-page);
+    color: var(--color-text-default);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.75em; 
+    color: var(--pooh-text-header);
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  
